@@ -1,0 +1,12 @@
+USE PROP;
+CREATE TABLE st(
+id INT PRIMARY KEY,
+name VARCHAR(30),
+gpa DECIMAL (3,2)
+);
+DESCRIBE st;
+ALTER TABLE st ADD department VARCHAR(10);
+ALTER TABLE st DROP department ;
+INSERT INTO st VALUES(22,'suresh',2.4);
+
+SELECT * FROM st;
